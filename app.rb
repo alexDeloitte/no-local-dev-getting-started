@@ -10,14 +10,14 @@ get "/" do
 end
 
 
-class Contact < ActiveRecord::Base
-  self.table_name = 'salesforce.contact'
+class User < ActiveRecord::Base
+  self.table_name = 'salesforce.user'
 end
 
-#get "/contacts" do
-#  @contacts = Contact.all
-#  erb :index
-#end
+get "/user" do
+  @user = User.Prueba1
+  erb :index
+end
 
 get "/create" do
   dashboard_url = 'https://dashboard.heroku.com/'
